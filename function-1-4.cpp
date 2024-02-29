@@ -1,10 +1,11 @@
 int sum_two_arrays(int array[], int secondarray[], int n){
-    int array3[n] = {};
+    int sum = 0;
     if (n<1){   
         return 0;
     }
     for (int i = 0; i < n; ++i) {
-        array3[i] = array[i] + secondarray[i];
+        sum += array[i];
+        sum += secondarray[i];
     }
-    return array3;
+    return sum;
 }
