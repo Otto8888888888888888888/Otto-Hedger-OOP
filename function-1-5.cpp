@@ -3,7 +3,7 @@ int count_evens(int number){
     if (number<1){   
         return 0;
     }
-    for (int i = 0; i < number+1; ++i) {
+    for (int i = 0; i < number; ++i) {
         if (i%2 == 0){
             count += 1;
         }
