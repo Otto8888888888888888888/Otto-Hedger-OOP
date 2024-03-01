@@ -7,6 +7,6 @@ int array_mean(int array[], int n){
     for (int i = 0; i < n; ++i) {
         sum += array[i];
     }
-    mean = sum/n;
+    mean = double(sum)/n;
     return mean;
 }
