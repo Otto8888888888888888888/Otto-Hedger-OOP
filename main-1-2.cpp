@@ -1,9 +1,22 @@
 #include <iostream>
-extern double array_mean(int array[], int n);
+extern int is_identity(int array[10][10]);
 
 int main(){
-    int array[] = {23,45,32,8,13};
-    int arraySize = sizeof(array) / sizeof(array[0]);
-    std::cout << "The mean of the elements in the array is " << array_mean(array, arraySize) << std::endl;
+    int array[10][10] = {{1,0,0,0,0,0,0,0,1,0},
+                         {0,1,0,0,0,0,0,0,0,0},
+                         {0,0,1,0,0,0,0,0,0,0},
+                         {0,0,0,1,0,0,0,0,0,0},
+                         {0,0,0,0,1,0,0,0,0,0},
+                         {0,0,0,0,0,1,0,0,0,0},
+                         {0,0,0,0,0,0,1,0,0,0},
+                         {0,0,0,0,0,0,0,1,0,0},
+                         {0,0,0,0,0,0,0,0,1,0},
+                         {0,0,0,0,0,0,0,0,0,1}};
+    if (is_identity(array) == 1){
+            std::cout << "The matrix is an identity matrix"  << std::endl;
+    }
+    else{
+        std::cout << "The matrix is not an identity matrix"  << std::endl;
+    }
     return 0;
  }
