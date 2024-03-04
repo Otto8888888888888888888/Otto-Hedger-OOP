@@ -1,12 +1,11 @@
 #include <iostream>
 
-extern int array_sum(int[], int);
+extern int sum_diagonal(int array[4][4]);
 
 int main(){
-    int array[] = {23,45,32,8,13};
-    int arraySize = sizeof(array) / sizeof(array[0]);
+    int array[4][4] = {{1,2,3,4},{4,3,2,1},{1,2,3,4},{3,2,4,1}};
 
-    std::cout << "The sum of the elements in the array is " << array_sum(array, arraySize) << std::endl;
+    std::cout << "The sum of the elements of the diagonal of the matrix is " << sum_diagonal(array) << std::endl;
     
     return 0;
 }
