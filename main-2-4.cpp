@@ -1,14 +1,9 @@
 #include <iostream>
 
-extern bool is_ascending(int array[], int n);
+extern int sum_min_max(int integers[], int length);
 int main(){
-    int array1[] = {3,2,29};
+    int array1[] = {3,54,5,2,7,4,5,88,2,-34};
     int arraySize = sizeof(array1) / sizeof(array1[0]);
-    if (is_ascending(array1, arraySize)  == 1){
-        std::cout << "The array is in ascending order" << std::endl;
-    }
-    else{
-        std::cout << "The array is not in ascending order" << std::endl;
-    }
-    return 0;
+    std::cout << sum_min_max(array1, arraySize) << std::endl;
+
 }

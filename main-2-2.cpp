@@ -1,9 +1,9 @@
 #include <iostream>
 
-extern int max_element(int array[], int n);
+extern int binary_to_int(int binary_digits[], int number_of_digits);
 int main(){
-    int array1[] = {4,5,8,2,8,-5,2,-4};
-    int arraySize = sizeof(array1) / sizeof(array1[0]);
-    std::cout << "The laargest number in the array is " << max_element(array1,arraySize) << std::endl;
+    int binary_digits[11] = {1,0,1,0,1,1,0,0,0,0,0};
+    int number_of_digits = sizeof(binary_digits) / sizeof(binary_digits[0]);
+    std::cout << binary_to_int(binary_digits, number_of_digits) << std::endl;
     return 0;
 }

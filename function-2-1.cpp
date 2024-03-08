@@ -1,12 +1,17 @@
- int min_element(int array[], int n){
-    int smallest = array[0];
-    if (n<1){ 
-        return 0;
-    }
-    for (int i = 1; i<n; ++i) {
-        if (array[i]<smallest){
-            smallest = array[i];
+#include <iostream>
+#include <string>
+
+void print_binary_str(std::string decimal_number){
+    int num = std::stoi(decimal_number);
+    std::string binary = "";
+    while (num > 0){
+        if (num% 2 == 0){
+            binary = "0" + binary;
+        } 
+        else{
+            binary = "1" + binary;
         }
-    }
-    return smallest;
+        num/=2;
+    } 
+    std::cout << binary << std::endl;
 }

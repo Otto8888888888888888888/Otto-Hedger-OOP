@@ -1,13 +1,10 @@
 
-int max_element(int array[], int n){
-    int largest = array[0];
-    if (n<1){ 
-        return 0;
+int binary_to_int(int binary_digits[], int number_of_digits){
+    int num = 0;
+    int power = 1;
+    for (int i = number_of_digits -1; i >= 0; --i){
+        num += binary_digits[i]*power;
+        power *=2;
     }
-    for (int i = 1; i<n; ++i) {
-        if (array[i]>largest){
-            largest = array[i];
-        }
-    }
-    return largest; 
+    return num;
 }

@@ -1,11 +1,12 @@
 #include <iostream>
+#include <string>
 
-extern int min_element(int array[], int n);
+extern void print_binary_str(std::string decimal_number);
 
 int main(){
-    int array1[] = {4,5,8,2,8,-5,2,-4};
-    int arraySize = sizeof(array1) / sizeof(array1[0]);
-    std::cout << "The smallest number in the array is " << min_element(array1,arraySize) << std::endl;
-    
+    std::string number;
+    std::cout << "Enter a number to convert to binary" << std::endl;
+    std::getline(std::cin, number);
+    print_binary_str(number);
     return 0;
 }
