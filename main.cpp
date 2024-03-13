@@ -9,6 +9,7 @@ int main(){
     double* ptrdoub = &ten;
     char* str = &star;
     int N = 5;
+    double M = 3.5; // Value to initialize the array elements with
     double *maxPtr = dynamicArray(N);
     //changeValue(ptrdoub);
     //printArray(array, arraySize) ;
