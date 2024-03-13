@@ -9,11 +9,11 @@ int main(){
     double* ptrdoub = &ten;
     char* str = &star;
     int N = 5;
-    double M = 3.5; // Value to initialize the array elements with
+    double M = 3.5; 
     double *maxPtr = dynamicArray(N);
-    //changeValue(ptrdoub);
-    //printArray(array, arraySize) ;
-    //std::cout << arrayMax(array, arraySize) << std::endl;
+    changeValue(ptrdoub);
+    printArray(array, arraySize) ;
+    std::cout << arrayMax(array, arraySize) << std::endl;
     std::cout << maxPtr << std::endl;
     delete[] maxPtr;
 
