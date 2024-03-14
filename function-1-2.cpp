@@ -8,7 +8,7 @@ void modifyArray(double* array, int size, double value){
     for(int i = 0;i < size; ++i){
         arr2[i] = arr2[i] + value;
     }
-    for(int i = 0;i < size; ++i){
-        std::cout << arr2[i] << std::endl;
-    }
+    //for(int i = 0;i < size; ++i){
+    //    std::cout << arr2[i] << std::endl;
+    //}
 }
