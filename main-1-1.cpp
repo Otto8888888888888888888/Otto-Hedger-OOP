@@ -1,11 +1,10 @@
 #include <iostream>
 
-extern int sum_diagonal(int array[4][4]);
+extern double arrayMin(double* array, int size);
 
 int main(){
-    int array[4][4] = {{1,2,3,4},{4,3,2,1},{1,2,3,4},{3,2,4,1}};
-
-    std::cout << "The sum of the elements of the diagonal of the matrix is " << sum_diagonal(array) << std::endl;
-    
+    double array[] = {4,2,3,1};
+    int size =  sizeof(array)/sizeof(array[0]);
+    std::cout << arrayMin(array, size) << std::endl;
     return 0;
 }
