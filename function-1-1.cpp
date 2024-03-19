@@ -1,10 +1,10 @@
+#include "Person.h"
 
-double arrayMin(double* array, int size) {
-    double minimum = array[0];
-    for (int i=1; i<size; ++i){
-        if (array[i]< minimum){
-            minimum = array[i];
-        }
+Person* createPersonArray(int n)  {
+    Person* array = new Person[n];
+    for (int i = 0; i <n; ++i){
+        array[i].name = "John Doe";
+        array[i].age = 0;
     }
-    return minimum;
+    return array;
 }
