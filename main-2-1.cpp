@@ -1,12 +1,12 @@
 #include <iostream>
 #include <string>
 
-extern void print_binary_str(std::string decimal_number);
+extern int *readNumbers();
+extern void hexDigits(int *numbers,int length) ;
 
 int main(){
-    std::string number;
-    std::cout << "Enter a number to convert to binary" << std::endl;
-    std::getline(std::cin, number);
-    print_binary_str(number);
+    int* numbers = readNumbers();
+    int length = 10;
+    hexDigits(numbers, length);
     return 0;
 }

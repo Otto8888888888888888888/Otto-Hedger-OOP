@@ -1,4 +1,4 @@
-
+/*
 #include <iostream>
 #include "Person.h"
 
@@ -13,3 +13,15 @@ int main(){
     delete[] array;
     return 0;
 }
+*/
+
+extern void printNumbers(int *numbers,int length);
+extern int *readNumbers();
+int main(){
+    int* numbers = readNumbers();
+    int length = 10;
+
+    printNumbers(numbers, length);
+    return 0;
+}
+

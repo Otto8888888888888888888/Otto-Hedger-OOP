@@ -1,14 +1,15 @@
 #include <iostream>
-
-extern bool is_fanarray(int array[], int n);
+extern int *readNumbers();
+extern bool equalsArray(int *numbers1,int *numbers2,int length);
 int main(){
-    int array1[] = {1,2,3,2,1};
-    int arraySize = sizeof(array1) / sizeof(array1[0]);
-    if (is_fanarray(array1, arraySize)  == 1){
-        std::cout << "The array is a fan array" << std::endl;
+    int* numbers1 = readNumbers();
+    int* numbers2 = readNumbers();
+    int length = 10;
+    if (equalsArray(numbers1,numbers2,length)== true){
+        std::cout << " these arrays are the same" << std::endl;
     }
     else{
-        std::cout << "The array is not a fan array" << std::endl;
+        std::cout << "These arrays are  not the same" << std::endl;
     }
     return 0;
 }

@@ -1,9 +1,18 @@
-#include <algorithm>
-int median_array(int array[], int n){
-    int medNum = (n/2);
-    if (n<1 || n%2==0){ 
-        return 0;
+#include <iostream>
+#include <string>
+
+int *readNumbers(){
+    int* array = new int[10];
+    std::cout << "Enter 10 numbers: " << std::endl;
+    for (int i=0; i<10; ++i){
+        std::cin >> array[i];
     }
-    std::sort(array,array+n);
-    return(array[medNum]);
+    return array;
+}
+int *reverseArray(int *numbers1,int length){
+    int* numbers2 = new int[length];
+    for (int i=0; i<length; ++i){
+        numbers2[i] = numbers1[length-i-1];
+    }
+    return numbers2;
 }
