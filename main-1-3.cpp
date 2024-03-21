@@ -1,11 +1,12 @@
 #include <iostream>
-
-extern double* duplicateArray(double* array, int size);
+#include "Person.h"
+using namespace std;
 
 int main(){
-    double array[4] = {1,2,3,4};
-    int size =  sizeof(array)/sizeof(array[0]);
-    duplicateArray(array, size);
+    int n=5;
+    PersonList pl = createPersonList(n);
+    PersonList list2 = deepCopyPersonList(pl);
+    cout << "Person: " << list2.people[1].name << " Age: " << list2.people[1].age << endl;
     return 0;
 }
     

@@ -1,9 +1,10 @@
 #include <iostream>
-
-extern void print_scaled(int array[3][3], int scalar);
+#include "Person.h"
+using namespace std;
 int main(){
-    int scale = 3;
-    int threebythree[3][3] = {{0,1,2},{3,4,5},{6,7,8}};
-    print_scaled(threebythree,scale);
+    int n=5;
+    PersonList pl = createPersonList(n);
+    PersonList list2 = shallowCopyPersonList(pl);
+    cout << "Person: " << list2.people[1].name << " Age: " << list2.people[1].age << endl;
     return 0;
 }

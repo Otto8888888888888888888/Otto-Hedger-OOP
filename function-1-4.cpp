@@ -1,13 +1,20 @@
 #include <iostream>
+#include "Person.h"
 
-void print_scaled(int array[3][3], int scalar){
-    int new_array[3][3];
-    for (int i = 0; i < 3; ++i) {
-        for (int j = 0; j < 3; ++j){
-            new_array[i][j] = (array[i][j]*scalar);
-        }
+PersonList createPersonList(int n){
+    PersonList list;    
+    list.people = new Person[n];
+    list.numPeople = n;
+    for (int i = 0; i <n; ++i){
+        list.people[i].name = "Jane Doe";
+        list.people[i].age = 1;
     }
-    for (int i = 0; i < 3; ++i) {
-        std::cout << new_array[i][0] << ' ' << new_array[i][1] << ' ' << new_array[i][2] << ' ' << std::endl;
-    }
+    return list;
+}
+PersonList shallowCopyPersonList(PersonList pl){
+    PersonList list3;
+    list3.numPeople = pl.numPeople;
+    list3.people = new Person[list3.numPeople];
+    list3 = pl;
+
 }
