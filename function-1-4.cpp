@@ -14,7 +14,6 @@ PersonList createPersonList(int n){
 PersonList shallowCopyPersonList(PersonList pl){
     PersonList list3;
     list3.numPeople = pl.numPeople;
-    list3.people = new Person[list3.numPeople];
-    list3 = pl;
-
+    list3.people = pl.people;
+    return list3;
 }
