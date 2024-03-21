@@ -2,12 +2,19 @@
 #define PERSON_H
 
 #include <string>
-
 struct Person {
     std::string name;
     int age;
 };
 
-Person* createPersonArray(int n);
+struct PersonList {
+    Person* people;
+    int numPeople;
+};
 
+
+Person* createPersonArray(int n);
+PersonList createPersonList(int n);
+PersonList deepCopyPersonList(PersonList pl);
+PersonList shallowCopyPersonList(PersonList pl);
 #endif
