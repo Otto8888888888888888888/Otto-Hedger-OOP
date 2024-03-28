@@ -1,4 +1,0 @@
-1. Tells you about the changes you made.
-2. Accurate and good size
-3. When you makes changes to your code
-4. false just commit source files
