@@ -1,15 +1,12 @@
-
 #include <iostream>
-#include "Person.h"
+#include "Unit.h"
 
 
 int main(){
-    int n = 5;
-    Person* array = createPersonArray(n);
-
-    for (int i=0; i < n; ++i){
-        std::cout << "Person: " << array[i].name << " Age: " << array[i].age << std::endl;
-    }
-    delete[] array;
+    Unit unit1;
+    unit1 = Unit(100, 2, 3.4);
+    // std::cout << get_Num_Bedrooms(unit1) << std::endl;
+    // std::cout << get_Value(unit1) << std::endl;
+    // std::cout << get_Area(unit1) << std::endl;
     return 0;
 }
