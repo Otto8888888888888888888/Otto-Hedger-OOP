@@ -1,14 +1,25 @@
 #include "Unit.h"
 #include <iostream>
 
-
-int get_Num_Bedrooms(Unit){
-    return(Unit.num_beds);
+Unit::Unit(){
+    unit_val = 0;
+    num_beds =0;
+    unit_size = 0;
 }
 
-int get_Value(Unit){
-    return(Unit.unit_val);
+Unit::Unit(int unit_val, int num_beds, double unit_size)
+{
+    this->unit_val = unit_val;
+    this->num_beds = num_beds;
+    this->unit_size = unit_size;
 }
-double get_Area(Unit){
-    return(Unit.unit_size);
+int Unit::get_Num_Bedrooms(){
+    return num_beds;
+}
+
+int Unit::get_Value(){
+    return unit_val;
+}
+double Unit::get_Area(){
+    return unit_size;
 }
