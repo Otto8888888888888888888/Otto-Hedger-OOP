@@ -16,10 +16,7 @@ void Player::takeDamage(int damage)
 {
     health -= damage;
     cout << name << " takes " << damage << " damage. Remaining health: " << health << "\n";
-    if (health < 0)
-    {
-        health = 0;
-    }
+
 }
 string Player::getName(){
     return name;
