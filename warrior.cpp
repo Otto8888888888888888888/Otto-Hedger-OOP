@@ -1,3 +1,5 @@
+
+#include "player.h"
 #include "warrior.h"
     Warrior::Warrior(std::string name, int health, int damage, std::string weapon)
         :Player(name,health,damage),weapon(weapon){

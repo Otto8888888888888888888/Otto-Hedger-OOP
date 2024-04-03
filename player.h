@@ -16,9 +16,9 @@ public:
     ~Player();
     void attack(Player* opponent, int damage);
     void takeDamage(int damage);
-    string getName() const;
-    int getHealth() const;
-    int getDamage() const;
+    string getName();
+    int getHealth();
+    int getDamage();
     void setName(std::string name);
     void setHealth(int health);
     void setDamage(int damage);
