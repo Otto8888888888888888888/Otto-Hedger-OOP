@@ -16,6 +16,7 @@ public:
     void assignID();
     void parkVehicle(Vehicle* vehicle);
     void unparkVehicle(int ID);
+    int countOverstayingVehicles(int maxParkingDuration);
 };
 
 #endif
