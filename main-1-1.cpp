@@ -1,7 +1,7 @@
 #include <iostream>
-#include "bus.h"
-#include "car.h"
-#include "motorbike.h"
+#include "Bus.h"
+#include "Car.h"
+#include "Motorbike.h"
 
 int main() {
     int numBuses, numCars, numMotorbikes;
@@ -29,7 +29,7 @@ int main() {
         vehicles[numBuses + i] = new Car(carID);
     }
 
-\    for (int i = 0; i < numMotorbikes; ++i) {
+    for (int i = 0; i < numMotorbikes; ++i) {
         int motorbikeID;
         cout << "Enter ID for Motorbike " << i + 1 << ": ";
         cin >> motorbikeID;
