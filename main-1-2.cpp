@@ -30,7 +30,7 @@ int main() {
                 break;
             default:
                 cout << "Invalid choice. Please try again." << endl;
-                continue; // Go to the next iteration of the loop
+                continue;
         }
 
         ParkingLot.parkVehicle(vehicle);
