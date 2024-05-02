@@ -1,9 +1,12 @@
 #ifndef AIRCRAFT_H
 #define AIRCRAFT_H
+#include <string>
+#include <iostream>
+using namespace std;
 
 class AirCraft
 {
-private:
+protected:
     int weight;
     float fuel;
     int numberOfFlights;
