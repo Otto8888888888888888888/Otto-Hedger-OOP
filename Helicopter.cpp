@@ -27,7 +27,7 @@ void Helicopter::fly(int headwind, int minutes){
         fuelhold = (fuel-(0.2*minutes));
     }
     if (fuelhold < 20){
-        cout<< "Sorry you do not have enough fuel to fly" << endl;
+        fuelhold = 100.0;
     }
     else{
         fuel = fuelhold;
