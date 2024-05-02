@@ -3,8 +3,17 @@
 
 int main(){
     Helicopter heli1(5670, "Copter");
-    cout << heli1.get_fuel() << endl;
+    cout << "Fuel : " << heli1.get_fuel() << endl;
     heli1.fly(30,20);
 
-    cout << heli1.get_fuel() << endl;
+    cout << "Fuel : " << heli1.get_fuel() << endl;
+    cout << "Name : " << heli1.get_name() << endl;
+    cout << "Weight: " << heli1.get_weight() << endl;
+    heli1.refuel();
+    cout << "Fuel : " << heli1.get_fuel() << endl;
+    heli1.set_weight(6300);
+    heli1.fly(430,100);
+    cout << "Fuel : " << heli1.get_fuel() << endl;
+    cout << "Weight: " << heli1.get_weight() << endl;
+
 }

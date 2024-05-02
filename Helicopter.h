@@ -1,5 +1,6 @@
 #ifndef HELICOPTER_H
 #define HELICOPTER_H
+#include <string>
 
 class Helicopter: public AirCraft{
     private:
