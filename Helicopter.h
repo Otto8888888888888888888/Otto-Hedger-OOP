@@ -1,5 +1,7 @@
 #ifndef HELICOPTER_H
 #define HELICOPTER_H
+#include "AirCraft.h"
+
 #include <string>
 using namespace std;
 
