@@ -1,6 +1,7 @@
 #ifndef HELICOPTER_H
 #define HELICOPTER_H
 #include <string>
+using namespace std;
 
 class Helicopter: public AirCraft{
     private:
