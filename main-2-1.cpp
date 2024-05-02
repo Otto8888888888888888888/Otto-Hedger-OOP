@@ -1,5 +1,6 @@
 #include "AirCraft.h"
 #include "Helicopter.h"
+#include <string>
 
 int main(){
     Helicopter heli1(5670, "Copter");

@@ -1,5 +1,6 @@
 #include "AirCraft.h"
 #include "Helicopter.h"
+#include <string>
 
 Helicopter::Helicopter(){
     weight = 5000;
