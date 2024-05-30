@@ -10,5 +10,8 @@ int main(){
     std::cout << std::get<0>(position1) << std::get<1>(position1) << std::endl;
     c1.setPos(4,5);
     std::cout << u1.calculateDistance(position1, u1.generateRandomPos(4,4)) << std::endl;
+    std::cout << c1.getType() << std::endl;
+    c1.setType('K');
+    std::cout << c1.getType() << std::endl;
 
 }

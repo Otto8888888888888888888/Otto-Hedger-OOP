@@ -4,7 +4,7 @@
 
 class Cell
 {
-protected:
+private:
     std::tuple<int, int> position;
     char type;
 public:
@@ -12,7 +12,7 @@ public:
     std::tuple<int, int> getPos();
     char getType();
     void setPos(int x, int y);
-    void setType();
+    void setType(char type);
 };
 
 Cell::Cell(int x, int y, char type){
@@ -20,7 +20,7 @@ Cell::Cell(int x, int y, char type){
     this->type=type;
 }
 
- std::tuple<int,int> Cell::getPos(){
+std::tuple<int,int> Cell::getPos(){
     return position;
 }
 
@@ -32,7 +32,7 @@ void Cell::setPos(int x, int y){
     position = std::make_tuple(x,y);
 }
 
-void Cell::setType(){
+void Cell::setType(char type){
     this->type=type;
 }
 
