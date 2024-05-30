@@ -3,27 +3,21 @@
 #include "Effect.h"
 #include "Cell.h"
 
-class Trap: public: Cell public: Effect{
+class Trap: public Cell, public Effect{
     private:
-    bool active;
+    bool active = true;
     public:
-    Trap(int x, int y);
+    Trap(int x, int y): Cell(x,y,'T'){};
     bool isActive();
     void apply(Cell& cell);
 };
 
-Trap::Trap(int x, int y){
-    position = std::make_tuple(x,y);
-    type = 'T';
-    active = true;
-}
-
-Bool Trap::isActive(){
+bool Trap::isActive(){
     return active;
 }
 
 void Trap::apply(Cell& cell){
-    if active = true{
+    if (active == true){
         cell.setType('T');
         active = false;
     }

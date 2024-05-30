@@ -4,7 +4,7 @@
 
 class Cell
 {
-private:
+protected:
     std::tuple<int, int> position;
     char type;
 public:

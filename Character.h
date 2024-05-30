@@ -2,20 +2,15 @@
 #define CHARACTER_H
 #include "Cell.h"
 
-class Character: public: Cell{
+class Character: public Cell{
     private:
     public:
-    Character(int x, int y);
-    void move(int dx, int dy)
+    Character(int x, int y) : Cell (x,y,'C' ){};
+    void move(int dx, int dy);
 };
 
-Character::Character(int x, int y){
-    position = std::make_tuple(x,y);
-    type = 'C';
-}
-
-Character::move(int dx, int dy){
-    position = setPos(dx, dy);
+void Character::move(int dx, int dy){
+    setPos(dx, dy);
 }
 
 #endif
