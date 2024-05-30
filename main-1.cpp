@@ -5,8 +5,10 @@
 
 int main(){
     Cell c1(3,4,'O');
-    Cell c2(5,6,'K');
-    //int x1 = std::get<0>(c1.getPos)
-    std::cout << c1.getType() << std::endl;
-    //c1.setPos()
+    Utils u1;
+    std::tuple<int,int> position1 = c1.getPos();
+    std::cout << std::get<0>(position1) << std::get<1>(position1) << std::endl;
+    c1.setPos(4,5);
+    std::cout << u1.calculateDistance(position1, u1.generateRandomPos(4,4)) << std::endl;
+
 }
