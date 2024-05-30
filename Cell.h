@@ -1,0 +1,41 @@
+#ifndef CELL_H
+#define CELL_H
+#include <tuple>
+
+class Cell
+{
+private:
+    std::tuple<int, int> position;
+    char type;
+public:
+    Cell(int x, int y, char type);
+    std::tuple<int, int> getPos();
+    char getType();
+    void setPos(int x, int y);
+    void setType();
+};
+
+Cell::Cell(int x, int y, char type){
+    std::tuple<int, int> position = std::make_tuple(x,y);
+    this->type=type;
+}
+
+ std::tuple<int,int> Cell::getPos(){
+    return position;
+}
+
+char Cell::getType(){
+    return type;
+}
+
+
+void Cell::setPos(int x, int y){
+    std::tuple<int, int> position = std::make_tuple(x,y);
+}
+
+void Cell::setType(){
+    this->type=type;
+}
+
+
+#endif
