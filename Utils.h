@@ -6,8 +6,8 @@
 #include <random>
 class Utils{
 public:
-    std::tuple<int, int> generateRandomPos(int gridWidth, int gridHeight);
-    double calculateDistance(std::tuple<int, int> pos1, std::tuple<int, int> pos2);
+    std::tuple<int, int> static generateRandomPos(int gridWidth, int gridHeight);
+    double static calculateDistance(std::tuple<int, int> pos1, std::tuple<int, int> pos2);
 };
 
 std::tuple<int,int> Utils::generateRandomPos(int gridWidth, int gridHeight){
